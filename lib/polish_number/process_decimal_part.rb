@@ -14,7 +14,7 @@ module PolishNumber
     end
 
     def call
-      return '' if @number == 0
+      return 'zero groszy' if @number == 0
       [
         ProcessNumber.call(digits),
         CURRENCIES[ClassifyNumbers.call(@number, digits)],
